@@ -52,10 +52,8 @@ public class TwitterPorukaTest {
 		t.setKorisnik("");
 		
 	}
-	/**
-	 * Test method for {@link com.twitter.poruke.TwitterPoruka#setPoruka(java.lang.String)}.
-	 */
 	
+	@Test
 	public void testSetPoruka() {
 		t.setPoruka("Ima nas");
 		
