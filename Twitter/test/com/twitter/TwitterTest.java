@@ -39,7 +39,7 @@ public class TwitterTest {
 	 * Test method for {@link com.twitter.Twitter#vratiSvePoruke()}.
 	 */
 	@Test
-	public void testVratiSvePoruke() {
+	public void testVratiSvePorukeDuzina() {
 		
 		
 		for (int i = 0; i < 10; i++) {
@@ -47,7 +47,23 @@ public class TwitterTest {
 		}
 		assertEquals(10, t.vratiSvePoruke().size());
 	}
-
+	public void testVratiSvePorukeSadrzaj(){
+		t.unesi("Marko", "Ima nas");
+		t.unesi("Zarko", "Pao je");
+		t.unesi("Luka", "Puko si");
+		t.unesi("Mladen", "Onesvesti se");
+		
+		LinkedList<TwitterPoruka> lista = t.vratiSvePoruke();
+		assertEquals("Marko", lista.get(0).getKorisnik());
+		assertEquals("Zarko", lista.get(1).getKorisnik());
+		assertEquals("Luka", lista.get(2).getKorisnik());
+		assertEquals("Mladen", lista.get(3).getKorisnik());
+		
+		assertEquals("Ima nas", lista.get(0).getPoruka());
+		assertEquals("Pao je", lista.get(1).getPoruka());
+		assertEquals("Puko si", lista.get(2).getPoruka());
+		assertEquals("Onesvesti se", lista.get(3).getPoruka());
+	}
 	/**
 	 * Test method for {@link com.twitter.Twitter#unesi(java.lang.String, java.lang.String)}.
 	 */
