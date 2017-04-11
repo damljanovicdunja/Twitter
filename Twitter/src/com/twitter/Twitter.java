@@ -4,11 +4,11 @@ import java.util.LinkedList;
 import com.twitter.poruke.TwitterPoruka;
 /**
  * 
+ * Klasa vrsi unos twitova u listu Poruke ,na kraj same liste
+ * i pretragu liste za porukama da odgovarajucim tagom i vraca niz pronadjenih poruka
+ * ako broj poruka ne prelazi unapred odredjenu duzinu niza.
  * @author Dunja Damjanovic
  *@version 1.1
- *Klasa vrsi unos twitova u listu Poruke ,na kraj same liste
- * i pretragu liste za porukama da odgovarajucim tagom i vraca niz pronadjenih poruka
- *  ako broj poruka ne prelazi unapred odredjenu duzinu niza.
  */
 public class Twitter {
 	/**

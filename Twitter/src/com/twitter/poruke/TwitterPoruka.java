@@ -1,13 +1,11 @@
 package com.twitter.poruke;
 
 /**
- * 
+ * Klasa koja dokumentuje poruke korisnika.
+ *  
  * @author Dunja Damjanovic
  * 
  * @version 1.0
- * 
- * Klasa koja dokumentuje poruke korisnika.
- *
  */
 public class TwitterPoruka {
 	/**
